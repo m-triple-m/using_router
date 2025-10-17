@@ -4,7 +4,7 @@ import Home from '../pages/main/Home';
 import Login from '../pages/main/Login';
 import Signup from '../pages/main/Signup';
 import Profile from '../pages/user/Profile';
-import Meet from '../pages/user/meet';
+import Meet from '../pages/user/Meet';
 
 const AppRoutes = () => {
     return (
