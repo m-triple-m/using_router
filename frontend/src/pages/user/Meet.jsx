@@ -69,8 +69,21 @@ const Meet = () => {
 
     return (
         <div>
-            <video ref={localVideoRef} autoPlay playsInline muted style={{ width: "45%" }} />
-            <video ref={remoteVideoRef} autoPlay playsInline style={{ width: "45%" }} />
+            <div className='container mx-auto'>
+                <div className='grid md:grid-cols-2 gap-5'>
+                    <div>
+                        <p className='text-center mb-5'>Client 1</p>
+                        <video ref={localVideoRef} autoPlay playsInline muted style={{ width: "45%" }} />
+
+                    </div>
+                    <div>
+                        <p className='text-center mb-5'>Client 2</p>
+
+                        <video ref={remoteVideoRef} autoPlay playsInline style={{ width: "45%" }} />
+                    </div>
+                </div>
+            </div>
+            <div></div>
         </div>
     )
 }
