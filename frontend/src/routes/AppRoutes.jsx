@@ -4,6 +4,7 @@ import Home from '../pages/main/Home';
 import Login from '../pages/main/Login';
 import Signup from '../pages/main/Signup';
 import Profile from '../pages/user/Profile';
+import Meet from '../pages/user/meet';
 
 const AppRoutes = () => {
     return (
@@ -16,6 +17,7 @@ const AppRoutes = () => {
             </Route>
             <Route path='/user'>
                 <Route path='profile' Component={Profile} />
+                <Route path='meet' Component={Meet} />
             </Route>
         </Routes>
     )

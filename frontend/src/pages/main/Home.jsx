@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -15,9 +16,9 @@ const Home = () => {
           Create or join secure meetings instantly — no sign-up, no downloads, just click and connect.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">
+          <Link to="/user/meet" className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">
             Start a Meeting
-          </button>
+          </Link>
           <div className="flex border rounded-lg overflow-hidden">
             <input
               type="text"
