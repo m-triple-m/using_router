@@ -3,7 +3,7 @@ import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import userRoutes from "./routes/user.routes.js";
-import errorHandler from "./middleware/error.middleware.js";
+// import errorHandler from "./middleware/error.middleware.js";
 
 const app = express();
 
@@ -16,6 +16,6 @@ app.use(express.json());
 app.use("/api/v1/users", userRoutes);
 
 // Global Error Handler
-app.use(errorHandler);
+// app.use(errorHandler);
 
 export default app;  // 👈 export the configured app
